@@ -154,9 +154,9 @@ while not rospy.is_shutdown():
     if(arData["DY"] > 300):    # 목표 지점에 대한 Y축 거리가 300 이상일 경우
        speed = 50              # speed값을 50으로 지정
     elif(arData["DY"] > 200):  # 목표 지점에 대한 Y축 거리가 200 이상일 경우
-       speed = 30              # speed값을 30으로 지정
+       speed = 40              # speed값을 40으로 지정
     elif(arData["DY"] > 100):  # 목표 지점에 대한 Y축 거리가 100 이상일 경우
-       speed = 20              # speed값을 20으로 지정
+       speed = 30              # speed값을 30으로 지정
 
     # 목표 지점에 접근하였으나 주차 각도가 적절하지 않을 경우, 후진 후 재접근
     elif(arData["DY"] > 70 and arData["DY"] < 100):     # 목표 지점에 대한 Y축 거리가 70이상 100 미만일 경우
